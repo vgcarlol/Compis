@@ -12,6 +12,7 @@ def main(argv):
     tree = parser.prog()
 
     visitor = TypeCheckVisitor()
+    print("[DEBUG DRIVER] Invocando visitor.visit(tree)")
     try:
         visitor.visit(tree)
         print("Type checking passed")
